@@ -102,7 +102,7 @@
 					<h2>Seleccione su Pizza de preferencia</h2>
 					<p>Puede escoger su pizza de nuestras diferentes variedades y sabores que ofrecemos</p>
 					<p>Agregue su direccion actual</p>
-					<button class="btn btn-primary btn-outline with-arrow btn-sm" href="">Ingresar direccion del pedido</button>
+					<a class="btn btn-primary btn-outline with-arrow btn-sm" href="mapa.php#fh5co-why-us">Ingresar direccion del pedido</a>
 				</div>
 				<div class="col-md-4 text-center item-block">
 					<span class="icon"><img src="images/AsuncionP1.png"  class="img-responsive"></span>
