@@ -325,3 +325,52 @@ $("#pedido6").click(function(){
       })
 
 });
+
+$("#pedido_hamburguesa").click(function(){
+  const inputOptions = new Promise((resolve) => {
+      setTimeout(() => {
+        resolve({
+          'hawaina': 'Hawaina',
+          'clasica': 'Clasica',
+          'doble': 'Doble',
+        })
+      }, 1000)
+    })
+    
+    const { value: tamanio } = Swal.fire({
+      title: 'Seleccione tipo de <br>Hamburguesa',
+      input: 'radio',
+      showCancelButton: true,
+      cancelButtonColor: '#d33',
+      inputOptions: inputOptions,
+      cancelButtonText:'Cancelar Compra',
+      confirmButtonText:'Añadir al pedido',
+      footer:'Costos: <br>Hamburguesa Hawaina $60.00 MXN <br>Hamburguesa Clasica $45.00 MXN <br>Hamburguesa Doble $80.00 MXN <br>El tiempo de su pedido sera estimado en la seccion de Orden',
+      allowOutsideClick:false,
+      allowEscapeKey:false,
+      allowEnterKey:false,
+      stopKeydpwnPropagation:false,
+      inputValidator: (value) => {
+        if (!value) {
+          return 'Debe escoger un tamaño de pizza a ordenar'
+        }
+       else{
+            if(value=='hawaina')
+            {
+              return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Hamburguesa seleccionada: Hawaina' })
+            }
+            if(value=='clasica')
+            {
+              return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Hamburguesa seleccionada: Clasica' })
+            }
+            if(value=='doble')
+            {
+              return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Hamburguesa seleccionada: Doble' })
+            }
+            return ''
+        }
+      }
+      
+    })
+
+});

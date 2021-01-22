@@ -7,7 +7,16 @@
 
 		}
 	}*/
-	
+	if(isset($_GET['msgi']))
+	{
+		//echo "<script src='js/errorLogin.js'></script>";
+		$val=$_GET['msgi'];
+		if($val==1)
+		{
+			//echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@10'></script>";
+			//echo "<script src='js/errorLogin.js'></script>";
+		}
+	}
 ?>
 <!DOCTYPE html>
 <html class="no-js">
