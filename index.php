@@ -326,7 +326,9 @@
 			<div class="col-md-3 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
 				<h3>Desarrollado</h3>
 				<p>Equipo de desarrollo Dinamyte</p>
+				<!--
 				<p><a href="#" class="btn btn-primary btn-outline with-arrow btn-sm">Ingresar <i class="icon-arrow-right"></i></a></p>
+-->
 			</div>
 			<!--
 			<div class="col-md-6 col-md-push-1 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
