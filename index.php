@@ -442,7 +442,7 @@
 				<td  colspan=2>
 		  <!---->
 						<label data-error="wrong" data-success="right" for="orangeForm-name">Telefono: </label>
-						<input type="number" id="telefonoModal" name="telefonoModal" class="form-control validate" required>
+						<input type="number" id="telefonoModal" name="telefonoModal" min="1" pattern="^[0-9]+" class="form-control validate" required>
 				</td>
 			</tr>
 			<tr>
@@ -476,7 +476,7 @@
 				</td>
 				<td>
 			 			<label data-error="wrong" data-success="right" for="orangeForm-name">Codigo Postal</label>
-			  			<input type="text" id="cpModal" name="cpModal" class="form-control validate" required>
+			  			<input type="text" id="cpModal" name="cpModal" min="1" pattern="^[0-9]+" class="form-control validate" required>
 		  		</td>
 			</tr>
 			<tr>
@@ -492,7 +492,7 @@
 			<tr>
 				<td>
 				<label data-error="wrong" data-success="right" for="orangeForm-name">Numero de casa</label>
-				  		<input type="number" id="numeroModal" name="numeroModal" class="form-control validate" required>
+				  		<input type="number" id="numeroModal" name="numeroModal" min="1" pattern="^[0-9]+" class="form-control validate" required>
 				</td>
 			</tr>
 		  <!---->
