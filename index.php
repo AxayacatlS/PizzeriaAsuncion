@@ -85,7 +85,7 @@
 		   			<div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
 		   				<div class="slider-text-inner">
 		   					<h2>"Las mejores Pizza a su paladar"</h2>
-		   					<p><a href="#" class="btn btn-primary btn-lg"  data-toggle="modal" data-target="#modalLoginForm">Ordene ya</a></p>
+		   					<p><a href="#" class="btn btn-primary btn-lg"  data-toggle="modal" data-target="#modalLoginForm">Ingrese Aqui</a></p>
 		   				</div>
 		   			</div>
 		   		</div>
@@ -95,7 +95,7 @@
 		   			<div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
 		   				<div class="slider-text-inner">
 		   					<h2>"Pizzas con ingredientes naturales"</h2>
-		   					<p><a href="#" class="btn btn-primary btn-lg"  data-toggle="modal" data-target="#modalLoginForm">Ordene ya</a></p>
+		   					<p><a href="#" class="btn btn-primary btn-lg"  data-toggle="modal" data-target="#modalLoginForm">Ingrese Aqui</a></p>
 		   				</div>
 		   			</div>
 		   		</div>
@@ -105,7 +105,7 @@
 		   			<div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
 		   				<div class="slider-text-inner">
 		   					<h2>"Pruebe nuestras mejores pizzas"</h2>
-		   					<p><a href="" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalLoginForm">Ordene ya</a></p>
+		   					<p><a href="" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalLoginForm">Ingrese Aqui</a></p>
 		   				</div>
 		   			</div>
 		   		</div>
