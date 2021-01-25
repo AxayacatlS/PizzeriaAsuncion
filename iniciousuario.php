@@ -141,6 +141,14 @@
 					<p><a class="btn btn-primary btn-outline with-arrow" id="pedido6">Agregar a su pedido<i class="icon-arrow-right"></i></a></p>
 				</div>
 				<!--ADICIONALES-->
+			</div>
+	  	</div>
+	</div>
+	<div id="fh5co-why-us" class="animate-box">
+		<div class="container">
+			<div class="row">
+
+
 				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
 					<h3>Seleccione sus Adicionales</h3>
 					<p>Puede escoger productos adicionales</p>
@@ -177,6 +185,14 @@
 					<p><a class="btn btn-primary btn-outline with-arrow" id="pedido_papas">Agregar a su pedido<i class="icon-arrow-right"></i></a></p>
 				</div>
 				<!--BEBIDAS-->
+	  		</div>
+	  </div>
+	</div>
+
+	<div id="fh5co-why-us" class="animate-box">
+		<div class="container">
+			<div class="row">
+				
 				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
 					<h3>Seleccione su Bebida</h3>
 					<p>Escoga de nuestra seleccion de bebidas que tenemos para usted</p>
@@ -258,7 +274,35 @@
 	  </div>
 
 	  <!---->
-	  
+	  <?php 
+	  	$usuario_a=$_SESSION['user'];
+		  $sqldata=mysqli_query($conn,"SELECT * FROM cliente WHERE correo='$usuario_a'");
+		  $v1='';
+		  $v2='';
+		  $v3='';
+		  $v4='';
+		  $v5='';
+		  $v6='';
+		  $v7='';
+		  $v8='';
+		  $v9='';
+		  $v10='';
+		  $v11='';
+		  while($mostrar=mysqli_fetch_array($sqldata))
+			{
+				$v1=$mostrar['Nombre'];
+		  		$v2=$mostrar['Telefono'];
+		  		$v3=$mostrar['Colonia'];
+		  		$v4=$mostrar['Calle'];
+		  		$v5=$mostrar['Numero'];
+		  		$v6=$mostrar['apellido_p'];
+		  		$v7=$mostrar['apellido_m'];
+		  		$v8=$mostrar['correo'];
+		  		$v9=$mostrar['contrasenia'];
+		  		$v10=$mostrar['ciudad'];
+		  		$v11=$mostrar['codigo_postal'];
+			}
+	  ?>
       <div class="modal-body mx-3">
 		  
 		<table>
@@ -272,41 +316,37 @@
 			<tr >
 				<td colspan=2>
 		  				<label data-error="wrong" data-success="right" for="orangeForm-name">Nombre: </label>
-          				<input type="text" id="nombreModal" name="nombreModal" class="form-control validate" required>
+          				<input type="text" id="nombreModal" name="nombreModal" value="<?php echo $v1 ?>" class="form-control validate" required>
 				</td>
 			</tr>
 		  <!---->
 		  <tr>
 			  	<td>
 						<label data-error="wrong" data-success="right" for="orangeForm-name">Apellido Paterno: </label>
-						<input type="text" id="apellidoPModal" name="apellidoPModal" class="form-control validate" required>
+						<input type="text" id="apellidoPModal" name="apellidoPModal" value="<?php echo $v6 ?>" class="form-control validate" required>
 				</td>
 		  		<td>
 		 			 	<label data-error="wrong" data-success="right" for="orangeForm-name">Apellido Materno: </label>
-						<input type="text" id="apellidoMModal" name="apellidoMModal" class="form-control validate" required>
+						<input type="text" id="apellidoMModal" name="apellidoMModal" value="<?php echo $v7 ?>" class="form-control validate" required>
 				</td>
 			</tr>
 			<tr>
 				<td  colspan=2>
 		  <!---->
 						<label data-error="wrong" data-success="right" for="orangeForm-name">Telefono: </label>
-						<input type="number" id="telefonoModal" name="telefonoModal" class="form-control validate" required>
+						<input type="number" id="telefonoModal" name="telefonoModal" min="1" pattern="^[0-9]+" value="<?php echo $v2 ?>" class="form-control validate" required>
 				</td>
 			</tr>
 			<tr>
 				<td  colspan=2>
 						<label data-error="wrong" data-success="right" for="orangeForm-email">Correo electronico: </label>
-						<input type="email" id="emailModal" name="emailModal" class="form-control validate" required>
+						<input type="email" id="emailModal" name="emailModal" value="<?php echo $v8 ?>" class="form-control validate" required>
 				</td>
 			</tr>
 			<tr>
 				<td >
 						<label data-error="wrong" data-success="right" for="orangeForm-pass">Contraseña: </label>
-						<input type="password" id="password1Modal" name="password1Modal" class="form-control validate" required>
-				</td>
-				<td >
-						<label data-error="wrong" data-success="right" for="orangeForm-pass">Repita Contraseña: </label>
-						<input type="password" id="password2Modal" name="password2Modal" class="form-control validate" required>
+						<input type="password" id="password1Modal" name="password1Modal" value="<?php echo $v9 ?>" class="form-control validate" required>
 				</td>
 			</tr>
 		  <!---->
@@ -320,27 +360,27 @@
 			<tr>
 		 	 	<td>
 						<label data-error="wrong" data-success="right" for="orangeForm-name">Ciudad</label>
-						<input type="text" id="ciudadModal" name="ciudadModal" class="form-control validate" required>
+						<input type="text" id="ciudadModal" name="ciudadModal" value="<?php echo $v11 ?>" class="form-control validate" required>
 				</td>
 				<td>
 			 			<label data-error="wrong" data-success="right" for="orangeForm-name">Codigo Postal</label>
-			  			<input type="text" id="cpModal" name="cpModal" class="form-control validate" required>
+			  			<input type="text" id="cpModal" name="cpModal" value="<?php echo $v10 ?>" class="form-control validate" required>
 		  		</td>
 			</tr>
 			<tr>
 				<td>
 				  		<label data-error="wrong" data-success="right" for="orangeForm-name">Colonia</label>
-				  		<input type="text" id="coloniaModal" name="coloniaModal" class="form-control validate" required>
+				  		<input type="text" id="coloniaModal" name="coloniaModal" value="<?php echo $v3 ?>" class="form-control validate" required>
 			  	</td>
 			  	<td>
 				  		<label data-error="wrong" data-success="right" for="orangeForm-name">Calle</label>
-				  		<input type="text" id="calleModal" name="calleModal" class="form-control validate" required>
+				  		<input type="text" id="calleModal" name="calleModal" value="<?php echo $v4 ?>" class="form-control validate" required>
 			  	</td>
 			</tr>
 			<tr>
 				<td>
 				<label data-error="wrong" data-success="right" for="orangeForm-name">Numero de casa</label>
-				  		<input type="number" id="numeroModal" name="numeroModal" class="form-control validate" required>
+				  		<input type="number" id="numeroModal" name="numeroModal" min="1" pattern="^[0-9]+" value="<?php echo $v5 ?>" class="form-control validate" required>
 				</td>
 			</tr>
 		  <!---->
@@ -366,7 +406,7 @@
 	<script src="js/main.js"></script>
 	
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-	<script src="js/mensajesproductos.js"></script>
+	<script src="js/pruebamensaje3.js"></script>
 	</body>
 
 </html>

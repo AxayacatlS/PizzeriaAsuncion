@@ -23,6 +23,7 @@
 	<meta name="twitter:url" content="" />
 	<meta name="twitter:card" content="" />
 	<link rel="shortcut icon" href="favicon.ico">
+	
 
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/icomoon.css">
@@ -30,7 +31,11 @@
 	<link rel="stylesheet" href="css/flexslider.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/tableorden.css">
+	<link href="css/stacktable.css" rel="stylesheet">
 
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="js/stacktable.js"></script>
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<!--MENSAJE DE ALERTA PEDIDO-->
 	</head>
@@ -44,7 +49,7 @@
 				<h1><a href="#"><img src="images/logopizzeria1.png">Pizzeria Asuncion<span></span></a></h1>
 				<nav role="navigation">
 					<ul>
-						<li><a href="" data-toggle="modal" data-target="#modalLoginForm" ><img src="images/logoperfil1.png">Perfil</a></li>
+						<!--<li><a href="" data-toggle="modal" data-target="#modalLoginForm" ><img src="images/logoperfil1.png">Perfil</a></li>-->
 						<li><a href="iniciousuario.php#fh5co-why-us"><img src="images/logopizza1.png">Pizzas y adicionales</a></li>
 						<!--<li><a href="#"><img src="images/logobebida1.png">Adicionales</a></li>-->
 						<li><a href="orden.php"><img src="images/logopedido1.png">Mi Orden</a></li>
@@ -108,7 +113,7 @@
 	<div class="table-title">
 	<h3>Ordenes</h3>
 	</div>
-	<table class="table-fill">
+	<table class="table-fill" id="websendeos">
 	<thead>
 		<tr>
 			<th class="text-left">ID Pedido</th>
@@ -125,8 +130,15 @@
 	<?php
 	$usuario_n=$_SESSION['user'];
 	$cadena="SELECT * FROM pedidos WHERE nombre_usuario='$usuario_n'";
+	$sumprecio="SELECT SUM(precio) FROM pedidos WHERE nombre_usuario='$usuario_n'";
+	$sumcantidades="SELECT SUM(cantidad) FROM pedidos WHERE nombre_usuario='$usuario_n'";
 	$dato=mysqli_query($conn,$cadena);
-
+	//$osump=mysqli_query($conn,$sumprecio);
+	//$resp=mysql_result($osump, 0);
+	//$osumc=mysqli_query($conn,$sumcantidades);
+	//$resc=mysql_result($osumc, 0);
+	$totalc=0;
+	$totalp=0;
 	while($mostrar=mysqli_fetch_array($dato))
 	{
 		$concatenar=$mostrar['id_pedido'];
@@ -144,13 +156,27 @@
 			</td>
 		</tr>
 	<?php
+	$totalc=$totalc+$mostrar['cantidad'];
+	$totalp=$totalp+$mostrar['precio'];
 	}
 		?>
+		<tr>
+			<td class="text-left"></td>
+			<td class="text-left"></td>
+			<th class="text-left">Totales</th>
+			<td class="text-left"><?php echo $totalc ?></td>
+			<td class="text-left"><?php echo $totalp ?></td>
+			<td class="text-left"></td>
+			<td class="text-left"></td>
+		</tr>
 	</tbody>
 	</table>
 	
 	</div>
 
+	<script>
+		$('#websendeos').stacktable();
+	</script>
 
 	<footer id="fh5co-footer" role="contentinfo">
 	

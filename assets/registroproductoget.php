@@ -10,16 +10,17 @@
     {
         die("No hay conexion: ".mysqli_connect_error());
     }
-    if(isset($_GET["p"]))
+    if(isset($_GET["p"]) && isset($_GET["c"]))
     {
         $condicion=$_GET["p"];
         //echo "console.log('$condicion')";
+        //$micantidad=$_GET["c"];
         if($condicion==1)
         {
             
             $producto="Asuncion";
             $categoria="Pizza";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=130.00;
             $estatus="Pendiente";
             $tamanio="Chica";
@@ -41,7 +42,7 @@
             
             $producto="Asuncion";
             $categoria="Pizza";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=150.00;
             $estatus="Pendiente";
             $tamanio="Mediana";
@@ -63,7 +64,7 @@
             
             $producto="Asuncion";
             $categoria="Pizza";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=170.00;
             $estatus="Pendiente";
             $tamanio="Grande";
@@ -85,7 +86,7 @@
             
             $producto="Asuncion";
             $categoria="Pizza";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=190.00;
             $estatus="Pendiente";
             $tamanio="ExtraGrande";
@@ -107,7 +108,7 @@
         {
             $producto="Hawaina";
             $categoria="Pizza";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=130.00;
             $estatus="Pendiente";
             $tamanio="Chica";
@@ -124,7 +125,7 @@
         {
             $producto="Hawaina";
             $categoria="Pizza";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=150.00;
             $estatus="Pendiente";
             $tamanio="Mediana";
@@ -140,7 +141,7 @@
         {
             $producto="Hawaina";
             $categoria="Pizza";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=170.00;
             $estatus="Pendiente";
             $tamanio="Grande";
@@ -156,7 +157,7 @@
         {
             $producto="Hawaina";
             $categoria="Pizza";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=190.00;
             $estatus="Pendiente";
             $tamanio="ExtraGrande";
@@ -172,7 +173,7 @@
         {
             $producto="Mexicana";
             $categoria="Pizza";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=130.00;
             $estatus="Pendiente";
             $tamanio="Chica";
@@ -188,7 +189,7 @@
         {
             $producto="Mexicana";
             $categoria="Pizza";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=150.00;
             $estatus="Pendiente";
             $tamanio="Mediana";
@@ -204,7 +205,7 @@
         {
             $producto="Mexicana";
             $categoria="Pizza";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=170.00;
             $estatus="Pendiente";
             $tamanio="Grande";
@@ -220,7 +221,7 @@
         {
             $producto="Mexicana";
             $categoria="Pizza";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=190.00;
             $estatus="Pendiente";
             $tamanio="ExtraGrande";
@@ -235,7 +236,7 @@
         {
             $producto="Italiana";
             $categoria="Pizza";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=130.00;
             $estatus="Pendiente";
             $tamanio="Chica";
@@ -250,7 +251,7 @@
         {
             $producto="Italiana";
             $categoria="Pizza";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=150.00;
             $estatus="Pendiente";
             $tamanio="Mediana";
@@ -265,7 +266,7 @@
         {
             $producto="Italiana";
             $categoria="Pizza";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=170.00;
             $estatus="Pendiente";
             $tamanio="Grande";
@@ -280,7 +281,7 @@
         {
             $producto="Italiana";
             $categoria="Pizza";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=190.00;
             $estatus="Pendiente";
             $tamanio="ExtraGrande";
@@ -295,7 +296,7 @@
         {
             $producto="Azteca";
             $categoria="Pizza";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=130.00;
             $estatus="Pendiente";
             $tamanio="Chica";
@@ -310,7 +311,7 @@
         {
             $producto="Azteca";
             $categoria="Pizza";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=150.00;
             $estatus="Pendiente";
             $tamanio="Mediana";
@@ -325,7 +326,7 @@
         {
             $producto="Azteca";
             $categoria="Pizza";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=170.00;
             $estatus="Pendiente";
             $tamanio="Grande";
@@ -340,7 +341,7 @@
         {
             $producto="Azteca";
             $categoria="Pizza";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=190.00;
             $estatus="Pendiente";
             $tamanio="ExtraGrande";
@@ -355,7 +356,7 @@
         {
             $producto="Pepperoni";
             $categoria="Pizza";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=130.00;
             $estatus="Pendiente";
             $tamanio="Chica";
@@ -370,7 +371,7 @@
         {
             $producto="Pepperoni";
             $categoria="Pizza";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=150.00;
             $estatus="Pendiente";
             $tamanio="Mediana";
@@ -385,7 +386,7 @@
         {
             $producto="Pepperoni";
             $categoria="Pizza";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=170.00;
             $estatus="Pendiente";
             $tamanio="Grande";
@@ -400,7 +401,7 @@
         {
             $producto="Pepperoni";
             $categoria="Pizza";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=190.00;
             $estatus="Pendiente";
             $tamanio="ExtraGrande";
@@ -415,7 +416,7 @@
         {
             $producto="HamburguesaHawaina";
             $categoria="Adicionales";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=60;
             $estatus="Pendiente";
             $tamanio="Normal";
@@ -430,7 +431,7 @@
         {
             $producto="HamburguesaClasica";
             $categoria="Adicionales";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=45;
             $estatus="Pendiente";
             $tamanio="Normal";
@@ -445,7 +446,7 @@
         {
             $producto="HamburguesaDoble";
             $categoria="Adicionales";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=80;
             $estatus="Pendiente";
             $tamanio="ExtraGrande";
@@ -460,7 +461,7 @@
         {
             $producto="Hotdog";
             $categoria="Adicionales";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=15;
             $estatus="Pendiente";
             $tamanio="Normal";
@@ -475,7 +476,7 @@
         {
             $producto="Hotdog";
             $categoria="Adicionales";
-            $cantidad="2";
+            $cantidad=$_GET["c"];
             $precio=30;
             $estatus="Pendiente";
             $tamanio="Normal";
@@ -490,7 +491,7 @@
         {
             $producto="Hotdog";
             $categoria="Adicionales";
-            $cantidad="3";
+            $cantidad=$_GET["c"];
             $precio=40;
             $estatus="Pendiente";
             $tamanio="Normal";
@@ -505,7 +506,7 @@
         {
             $producto="AlitasBarbiquiu";
             $categoria="Adicionales";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=70;
             $estatus="Pendiente";
             $tamanio="Normal";
@@ -518,7 +519,7 @@
         {
             $producto="AlitasChipotle";
             $categoria="Adicionales";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=70;
             $estatus="Pendiente";
             $tamanio="Normal";
@@ -531,7 +532,7 @@
         {
             $producto="AlitasHabanero";
             $categoria="Adicionales";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=80;
             $estatus="Pendiente";
             $tamanio="Normal";
@@ -544,7 +545,7 @@
         {
             $producto="TortaHawaina";
             $categoria="Adicionales";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=60;
             $estatus="Pendiente";
             $tamanio="Normal";
@@ -557,7 +558,7 @@
         {
             $producto="TortaCubana";
             $categoria="Adicionales";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=60;
             $estatus="Pendiente";
             $tamanio="Normal";
@@ -570,7 +571,7 @@
         {
             $producto="TortaJamon";
             $categoria="Adicionales";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=30;
             $estatus="Pendiente";
             $tamanio="Normal";
@@ -583,7 +584,7 @@
         {
             $producto="TortaChirizo";
             $categoria="Adicionales";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=30;
             $estatus="Pendiente";
             $tamanio="Normal";
@@ -596,7 +597,7 @@
         {
             $producto="Papas";
             $categoria="Adicionales";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=30;
             $estatus="Pendiente";
             $tamanio="Chicas";
@@ -609,7 +610,7 @@
         {
             $producto="Papas";
             $categoria="Adicionales";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=45;
             $estatus="Pendiente";
             $tamanio="Medianas";
@@ -622,7 +623,7 @@
         {
             $producto="Papas";
             $categoria="Adicionales";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=60;
             $estatus="Pendiente";
             $tamanio="Grandes";
@@ -635,7 +636,7 @@
         {
             $producto="CocaCola";
             $categoria="Bebidas";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=35;
             $estatus="Pendiente";
             $tamanio="3Litro";
@@ -648,7 +649,7 @@
         {
             $producto="Fanta";
             $categoria="Bebidas";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=35;
             $estatus="Pendiente";
             $tamanio="3Litro";
@@ -662,7 +663,7 @@
         {
             $producto="Sprite";
             $categoria="Bebidas";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=35;
             $estatus="Pendiente";
             $tamanio="3Litro";
@@ -675,7 +676,7 @@
         {
             $producto="Fresca";
             $categoria="Bebidas";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=35;
             $estatus="Pendiente";
             $tamanio="3Litro";
@@ -688,7 +689,7 @@
         {
             $producto="CocaCola";
             $categoria="Bebidas";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=30;
             $estatus="Pendiente";
             $tamanio="2Litros";
@@ -700,7 +701,7 @@
         {
             $producto="Fanta";
             $categoria="Bebidas";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=30;
             $estatus="Pendiente";
             $tamanio="2Litros";
@@ -713,7 +714,7 @@
         {
             $producto="Sprite";
             $categoria="Bebidas";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=30;
             $estatus="Pendiente";
             $tamanio="2Litros";
@@ -726,7 +727,7 @@
         {
             $producto="Fresca";
             $categoria="Bebidas";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=30;
             $estatus="Pendiente";
             $tamanio="2Litros";
@@ -739,7 +740,7 @@
         {
             $producto="CocaCola";
             $categoria="Bebidas";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=15;
             $estatus="Pendiente";
             $tamanio="600ml";
@@ -752,7 +753,7 @@
         {
             $producto="Fanta";
             $categoria="Bebidas";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=15;
             $estatus="Pendiente";
             $tamanio="600ml";
@@ -765,7 +766,7 @@
         {
             $producto="Sprite";
             $categoria="Bebidas";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=15;
             $estatus="Pendiente";
             $tamanio="600ml";
@@ -778,7 +779,7 @@
         {
             $producto="Fresca";
             $categoria="Bebidas";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=15;
             $estatus="Pendiente";
             $tamanio="600ml";
@@ -791,7 +792,7 @@
         {
             $producto="Agua";
             $categoria="Bebidas";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=8;
             $estatus="Pendiente";
             $tamanio="600ml";
@@ -804,7 +805,7 @@
         {
             $producto="Agua";
             $categoria="Bebidas";
-            $cantidad="1";
+            $cantidad=$_GET["c"];
             $precio=15;
             $estatus="Pendiente";
             $tamanio="1L";

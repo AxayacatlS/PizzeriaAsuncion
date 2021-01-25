@@ -19,7 +19,7 @@ $("#pedido1").click(function(e){
         cancelButtonText:'Cancelar Compra',
         confirmButtonText:'Añadir al pedido',
         footer:'Costos: <br>Chica $130.00 MXN <br>Mediana $150.00 MXN <br>Grande $170.00 MXN <br>Extra Grande $190.00 MXN <br>El tiempo de su pedido sera estimado en la seccion de Orden',
-        html:'<label data-error="wrong" data-success="right" for="orangeForm-pass">Cantidad</label>'+'<input type="number" id="swal-input1" class="swal2-input" min="1" max="20" pattern="^[0-9]+">',allowOutsideClick:false,
+        allowOutsideClick:false,
         allowEscapeKey:false,
         allowEnterKey:false,
         stopKeydpwnPropagation:false,
@@ -30,22 +30,22 @@ $("#pedido1").click(function(e){
          else{
               if(value=='chica')
               {
-                window.location.href="assets/registroproductoget.php?p=1&c="+document.getElementById('swal-input1').value;
+                window.location.href="assets/registroproductoget.php?p=1";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Tamaño de pizza seleccionado: Chica' })
               }
               if(value=='mediana')
               {
-                window.location.href="assets/registroproductoget.php?p=2&c="+document.getElementById('swal-input1').value;
+                window.location.href="assets/registroproductoget.php?p=2";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Tamaño de pizza seleccionado: Mediana' })
               }
               if(value=='grande')
               {
-                window.location.href="assets/registroproductoget.php?p=3&c="+document.getElementById('swal-input1').value;
+                window.location.href="assets/registroproductoget.php?p=3";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Tamaño de pizza seleccionado: Grande' })
               }
               if(value=='extra')
               {
-                window.location.href="assets/registroproductoget.php?p=4&c="+document.getElementById('swal-input1').value;
+                window.location.href="assets/registroproductoget.php?p=4";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Tamaño de pizza seleccionado: Extra Grande' })
               }
               return ''
@@ -82,7 +82,7 @@ $("#pedido2").click(function(){
         cancelButtonText:'Cancelar Compra',
         confirmButtonText:'Añadir al pedido',
         footer:'Costos: <br>Chica $130.00 MXN <br>Mediana $150.00 MXN <br>Grande $170.00 MXN <br>Extra Grande $190.00 MXN <br>El tiempo de su pedido sera estimado en la seccion de Orden',
-        html:'<label data-error="wrong" data-success="right" for="orangeForm-pass">Cantidad</label>'+'<input type="number" id="swal-input1" class="swal2-input" min="1" max="20" pattern="^[0-9]+">',allowOutsideClick:false,
+        allowOutsideClick:false,
         allowEscapeKey:false,
         allowEnterKey:false,
         stopKeydpwnPropagation:false,
@@ -93,22 +93,22 @@ $("#pedido2").click(function(){
          else{
               if(value=='chica')
               {
-                window.location.href="assets/registroproductoget.php?p=5&c="+document.getElementById('swal-input1').value;
+                window.location.href="assets/registroproductoget.php?p=5";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Tamaño de pizza seleccionado: Chica' })
               }
               if(value=='mediana')
               {
-                window.location.href="assets/registroproductoget.php?p=6&c="+document.getElementById('swal-input1').value;
+                window.location.href="assets/registroproductoget.php?p=6";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Tamaño de pizza seleccionado: Mediana' })
               }
               if(value=='grande')
               {
-                window.location.href="assets/registroproductoget.php?p=7&c="+document.getElementById('swal-input1').value;
+                window.location.href="assets/registroproductoget.php?p=7";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Tamaño de pizza seleccionado: Grande' })
               }
               if(value=='extra')
               {
-                window.location.href="assets/registroproductoget.php?p=8&c="+document.getElementById('swal-input1').value;
+                window.location.href="assets/registroproductoget.php?p=8";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Tamaño de pizza seleccionado: Extra Grande' })
               }
               return ''
@@ -140,7 +140,7 @@ $("#pedido3").click(function(){
         cancelButtonText:'Cancelar Compra',
         confirmButtonText:'Añadir al pedido',
         footer:'Costos: <br>Chica $130.00 MXN <br>Mediana $150.00 MXN <br>Grande $170.00 MXN <br>Extra Grande $190.00 MXN <br>El tiempo de su pedido sera estimado en la seccion de Orden',
-        html:'<label data-error="wrong" data-success="right" for="orangeForm-pass">Cantidad</label>'+'<input type="number" id="swal-input1" class="swal2-input" min="1" max="20" pattern="^[0-9]+">',allowOutsideClick:false,
+        allowOutsideClick:false,
         allowEscapeKey:false,
         allowEnterKey:false,
         stopKeydpwnPropagation:false,
@@ -151,22 +151,22 @@ $("#pedido3").click(function(){
          else{
               if(value=='chica')
               {
-                window.location.href="assets/registroproductoget.php?p=9&c="+document.getElementById('swal-input1').value;
+                window.location.href="assets/registroproductoget.php?p=9";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Tamaño de pizza seleccionado: Chica' })
               }
               if(value=='mediana')
               {
-                window.location.href="assets/registroproductoget.php?p=10&c="+document.getElementById('swal-input1').value;
+                window.location.href="assets/registroproductoget.php?p=10";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Tamaño de pizza seleccionado: Mediana' })
               }
               if(value=='grande')
               {
-                window.location.href="assets/registroproductoget.php?p=11&c="+document.getElementById('swal-input1').value;
+                window.location.href="assets/registroproductoget.php?p=11";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Tamaño de pizza seleccionado: Grande' })
               }
               if(value=='extra')
               {
-                window.location.href="assets/registroproductoget.php?p=12&c="+document.getElementById('swal-input1').value;
+                window.location.href="assets/registroproductoget.php?p=12";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Tamaño de pizza seleccionado: Extra Grande' })
               }
               return ''
@@ -198,7 +198,7 @@ $("#pedido4").click(function(){
         cancelButtonText:'Cancelar Compra',
         confirmButtonText:'Añadir al pedido',
         footer:'Costos: <br>Chica $130.00 MXN <br>Mediana $150.00 MXN <br>Grande $170.00 MXN <br>Extra Grande $190.00 MXN <br>El tiempo de su pedido sera estimado en la seccion de Orden',
-        html:'<label data-error="wrong" data-success="right" for="orangeForm-pass">Cantidad</label>'+'<input type="number" id="swal-input1" class="swal2-input" min="1" max="20" pattern="^[0-9]+">',allowOutsideClick:false,
+        allowOutsideClick:false,
         allowEscapeKey:false,
         allowEnterKey:false,
         stopKeydpwnPropagation:false,
@@ -209,22 +209,22 @@ $("#pedido4").click(function(){
          else{
               if(value=='chica')
               {
-                window.location.href="assets/registroproductoget.php?p=13&c="+document.getElementById('swal-input1').value;
+                window.location.href="assets/registroproductoget.php?p=13";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Tamaño de pizza seleccionado: Chica' })
               }
               if(value=='mediana')
               {
-                window.location.href="assets/registroproductoget.php?p=14&c="+document.getElementById('swal-input1').value;
+                window.location.href="assets/registroproductoget.php?p=14";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Tamaño de pizza seleccionado: Mediana' })
               }
               if(value=='grande')
               {
-                window.location.href="assets/registroproductoget.php?p=15&c="+document.getElementById('swal-input1').value;
+                window.location.href="assets/registroproductoget.php?p=15";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Tamaño de pizza seleccionado: Grande' })
               }
               if(value=='extra')
               {
-                window.location.href="assets/registroproductoget.php?p=16&c="+document.getElementById('swal-input1').value;
+                window.location.href="assets/registroproductoget.php?p=16";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Tamaño de pizza seleccionado: Extra Grande' })
               }
               return ''
@@ -256,7 +256,7 @@ $("#pedido5").click(function(){
         cancelButtonText:'Cancelar Compra',
         confirmButtonText:'Añadir al pedido',
         footer:'Costos: <br>Chica $130.00 MXN <br>Mediana $150.00 MXN <br>Grande $170.00 MXN <br>Extra Grande $190.00 MXN <br>El tiempo de su pedido sera estimado en la seccion de Orden',
-        html:'<label data-error="wrong" data-success="right" for="orangeForm-pass">Cantidad</label>'+'<input type="number" id="swal-input1" class="swal2-input" min="1" max="20" pattern="^[0-9]+">',allowOutsideClick:false,
+        allowOutsideClick:false,
         allowEscapeKey:false,
         allowEnterKey:false,
         stopKeydpwnPropagation:false,
@@ -267,22 +267,22 @@ $("#pedido5").click(function(){
          else{
               if(value=='chica')
               {
-                window.location.href="assets/registroproductoget.php?p=17&c="+document.getElementById('swal-input1').value;
+                window.location.href="assets/registroproductoget.php?p=17";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Tamaño de pizza seleccionado: Chica' })
               }
               if(value=='mediana')
               {
-                window.location.href="assets/registroproductoget.php?p=18&c="+document.getElementById('swal-input1').value;
+                window.location.href="assets/registroproductoget.php?p=18";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Tamaño de pizza seleccionado: Mediana' })
               }
               if(value=='grande')
               {
-                window.location.href="assets/registroproductoget.php?p=19&c="+document.getElementById('swal-input1').value;
+                window.location.href="assets/registroproductoget.php?p=19";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Tamaño de pizza seleccionado: Grande' })
               }
               if(value=='extra')
               {
-                window.location.href="assets/registroproductoget.php?p=20&c="+document.getElementById('swal-input1').value;
+                window.location.href="assets/registroproductoget.php?p=20";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Tamaño de pizza seleccionado: Extra Grande' })
               }
               return ''
@@ -313,7 +313,7 @@ $("#pedido6").click(function(){
         cancelButtonText:'Cancelar Compra',
         confirmButtonText:'Añadir al pedido',
         footer:'Costos: <br>Chica $130.00 MXN <br>Mediana $150.00 MXN <br>Grande $170.00 MXN <br>Extra Grande $190.00 MXN <br>El tiempo de su pedido sera estimado en la seccion de Orden',
-        html:'<label data-error="wrong" data-success="right" for="orangeForm-pass">Cantidad</label>'+'<input type="number" id="swal-input1" class="swal2-input" min="1" max="20" pattern="^[0-9]+">',allowOutsideClick:false,
+        allowOutsideClick:false,
         allowEscapeKey:false,
         allowEnterKey:false,
         stopKeydpwnPropagation:false,
@@ -324,22 +324,22 @@ $("#pedido6").click(function(){
          else{
               if(value=='chica')
               {
-                window.location.href="assets/registroproductoget.php?p=21&c="+document.getElementById('swal-input1').value;
+                window.location.href="assets/registroproductoget.php?p=21";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Tamaño de pizza seleccionado: Chica' })
               }
               if(value=='mediana')
               {
-                window.location.href="assets/registroproductoget.php?p=22&c="+document.getElementById('swal-input1').value;
+                window.location.href="assets/registroproductoget.php?p=22";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Tamaño de pizza seleccionado: Mediana' })
               }
               if(value=='grande')
               {
-                window.location.href="assets/registroproductoget.php?p=23&c="+document.getElementById('swal-input1').value;
+                window.location.href="assets/registroproductoget.php?p=23";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Tamaño de pizza seleccionado: Grande' })
               }
               if(value=='extra')
               {
-                window.location.href="assets/registroproductoget.php?p=24&c="+document.getElementById('swal-input1').value;
+                window.location.href="assets/registroproductoget.php?p=24";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Tamaño de pizza seleccionado: Extra Grande' })
               }
               return ''
@@ -370,7 +370,7 @@ $("#pedido_hamburguesa").click(function(){
       cancelButtonText:'Cancelar Compra',
       confirmButtonText:'Añadir al pedido',
       footer:'Costos: <br>Hamburguesa Hawaina: $60.00 MXN <br>Hamburguesa Clasica: $45.00 MXN <br>Hamburguesa Doble: $80.00 MXN <br>El tiempo de su pedido sera estimado en la seccion de Orden',
-      html:'<label data-error="wrong" data-success="right" for="orangeForm-pass">Cantidad</label>'+'<input type="number" id="swal-input1" class="swal2-input" min="1" max="20" pattern="^[0-9]+">',allowOutsideClick:false,
+      allowOutsideClick:false,
       allowEscapeKey:false,
       allowEnterKey:false,
       stopKeydpwnPropagation:false,
@@ -381,17 +381,17 @@ $("#pedido_hamburguesa").click(function(){
        else{
             if(value=='hawaina')
             {
-              window.location.href="assets/registroproductoget.php?p=25&c="+document.getElementById('swal-input1').value;
+              window.location.href="assets/registroproductoget.php?p=25";
               //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Hamburguesa seleccionada: Hawaina' })
             }
             if(value=='clasica')
             {
-              window.location.href="assets/registroproductoget.php?p=26&c="+document.getElementById('swal-input1').value;
+              window.location.href="assets/registroproductoget.php?p=26";
               //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Hamburguesa seleccionada: Clasica' })
             }
             if(value=='doble')
             {
-              window.location.href="assets/registroproductoget.php?p=27&c="+document.getElementById('swal-input1').value;
+              window.location.href="assets/registroproductoget.php?p=27";
               //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Hamburguesa seleccionada: Doble' })
             }
             return ''
@@ -422,7 +422,6 @@ $("#pedido_hotdog").click(function(){
         cancelButtonText:'Cancelar Compra',
         confirmButtonText:'Añadir al pedido',
         footer:'Costos: <br>1 Hotdog: $15.00 MXN <br>2 Hotdogs: $30.00 MXN <br>3 Hotdogs: $40.00 MXN <br>El tiempo de su pedido sera estimado en la seccion de Orden',
-       // html:'<label data-error="wrong" data-success="right" for="orangeForm-pass">Cantidad</label>'+'<input type="number" id="swal-input1" class="swal2-input" min="1" max="20" pattern="^[0-9]+">',
         allowOutsideClick:false,
         allowEscapeKey:false,
         allowEnterKey:false,
@@ -434,17 +433,17 @@ $("#pedido_hotdog").click(function(){
          else{
               if(value=='hsolo')
               {
-                window.location.href="assets/registroproductoget.php?p=28&c=1";
+                window.location.href="assets/registroproductoget.php?p=28";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Ha seleccionado 1 Hotdog' })
               }
               if(value=='hdoble')
               {
-                window.location.href="assets/registroproductoget.php?p=29&c=2";
+                window.location.href="assets/registroproductoget.php?p=29";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Ha seleccionado 2 Hotdogs' })
               }
               if(value=='htriple')
               {
-                window.location.href="assets/registroproductoget.php?p=30&c=3";
+                window.location.href="assets/registroproductoget.php?p=30";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Ha seleccionado 3 Hotdogs' })
               }
               return ''
@@ -475,7 +474,7 @@ $("#pedido_hotdog").click(function(){
         cancelButtonText:'Cancelar Compra',
         confirmButtonText:'Añadir al pedido',
         footer:'Costos: <br>Orden Alitas Barbiquiu: $70.00 MXN <br>Orden Alitas Chipotle: $70.00 MXN <br>Orden Alitas Habanero: $80.00 MXN <br>El tiempo de su pedido sera estimado en la seccion de Orden',
-        html:'<label data-error="wrong" data-success="right" for="orangeForm-pass">Cantidad</label>'+'<input type="number" id="swal-input1" class="swal2-input" min="1" max="20" pattern="^[0-9]+">',allowOutsideClick:false,
+        allowOutsideClick:false,
         allowEscapeKey:false,
         allowEnterKey:false,
         stopKeydpwnPropagation:false,
@@ -486,17 +485,17 @@ $("#pedido_hotdog").click(function(){
          else{
               if(value=='alitabbq')
               {
-                window.location.href="assets/registroproductoget.php?p=31&c="+document.getElementById('swal-input1').value;
+                window.location.href="assets/registroproductoget.php?p=31";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Ha seleccionado Orden de alitas Barbiquiu'})
               }
               if(value=='alitachipotle')
               {
-                window.location.href="assets/registroproductoget.php?p=32&c="+document.getElementById('swal-input1').value;
+                window.location.href="assets/registroproductoget.php?p=32";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Ha seleccionado Orden de alitas Chipotle' })
               }
               if(value=='alitahabanero')
               {
-                window.location.href="assets/registroproductoget.php?p=33&c="+document.getElementById('swal-input1').value;
+                window.location.href="assets/registroproductoget.php?p=33";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Ha seleccionado orden de alitas Habanero' })
               }
               return ''
@@ -529,7 +528,7 @@ $("#pedido_hotdog").click(function(){
         cancelButtonText:'Cancelar Compra',
         confirmButtonText:'Añadir al pedido',
         footer:'Costos: <br>Torta Hawaina: $60.00 MXN <br>Torta Cubana: $60.00 MXN <br>Torta de jamon: $30.00 MXN<br>Torta de Chorizo: $30.00 MXN<br>El tiempo de su pedido sera estimado en la seccion de Orden',
-        html:'<label data-error="wrong" data-success="right" for="orangeForm-pass">Cantidad</label>'+'<input type="number" id="swal-input1" class="swal2-input" min="1" max="20" pattern="^[0-9]+">',allowOutsideClick:false,
+        allowOutsideClick:false,
         allowEscapeKey:false,
         allowEnterKey:false,
         stopKeydpwnPropagation:false,
@@ -540,22 +539,22 @@ $("#pedido_hotdog").click(function(){
          else{
               if(value=='hawaina')
               {
-                window.location.href="assets/registroproductoget.php?p=34&c="+document.getElementById('swal-input1').value;
+                window.location.href="assets/registroproductoget.php?p=34";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Ha seleccionado Torta Hawaina'})
               }
               if(value=='cubana')
               {
-                window.location.href="assets/registroproductoget.php?p=35&c="+document.getElementById('swal-input1').value;
+                window.location.href="assets/registroproductoget.php?p=35";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Ha seleccionado Torta Cubana' })
               }
               if(value=='jamon')
               {
-                window.location.href="assets/registroproductoget.php?p=36&c="+document.getElementById('swal-input1').value;
+                window.location.href="assets/registroproductoget.php?p=36";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Ha seleccionado Torta de Jamon' })
               }
               if(value=='chorizo')
               {
-                window.location.href="assets/registroproductoget.php?p=37&c="+document.getElementById('swal-input1').value;
+                window.location.href="assets/registroproductoget.php?p=37";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Ha seleccionado Torta de Chorizo' })
               }
               return ''
@@ -585,7 +584,7 @@ $("#pedido_hotdog").click(function(){
         cancelButtonText:'Cancelar Compra',
         confirmButtonText:'Añadir al pedido',
         footer:'Costos: <br>Orden de Papas Chicas: $30.00 MXN <br>Orden de Papas Medianas: $45.00 MXN <br>Orden de Papas Grandes: $60.00 MXN<br>El tiempo de su pedido sera estimado en la seccion de Orden',
-        html:'<label data-error="wrong" data-success="right" for="orangeForm-pass">Cantidad</label>'+'<input type="number" id="swal-input1" class="swal2-input" min="1" max="20" pattern="^[0-9]+">',allowOutsideClick:false,
+        allowOutsideClick:false,
         allowEscapeKey:false,
         allowEnterKey:false,
         stopKeydpwnPropagation:false,
@@ -596,17 +595,17 @@ $("#pedido_hotdog").click(function(){
          else{
               if(value=='papachica')
               {
-                window.location.href="assets/registroproductoget.php?p=38&c="+document.getElementById('swal-input1').value;
+                window.location.href="assets/registroproductoget.php?p=38";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Ha seleccionado Orden de Papas Chicas'})
               }
               if(value=='papamedianas')
               {
-                window.location.href="assets/registroproductoget.php?p=39&c="+document.getElementById('swal-input1').value;
+                window.location.href="assets/registroproductoget.php?p=39";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Ha seleccionado Orden de Papas Medianas' })
               }
               if(value=='papagrande')
               {
-                window.location.href="assets/registroproductoget.php?p=40&c="+document.getElementById('swal-input1').value;
+                window.location.href="assets/registroproductoget.php?p=40";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Ha seleccionado Orden de Papas Grande' })
               }
               return ''
@@ -637,7 +636,7 @@ $("#pedido_hotdog").click(function(){
         cancelButtonText:'Cancelar Compra',
         confirmButtonText:'Añadir al pedido',
         footer:'Costos: <br>Refrescos 3 Litros: $35.00 MXN <br>El tiempo de su pedido sera estimado en la seccion de Orden',
-        html:'<label data-error="wrong" data-success="right" for="orangeForm-pass">Cantidad</label>'+'<input type="number" id="swal-input1" class="swal2-input" min="1" max="20" pattern="^[0-9]+">',allowOutsideClick:false,
+        allowOutsideClick:false,
         allowEscapeKey:false,
         allowEnterKey:false,
         stopKeydpwnPropagation:false,
@@ -648,22 +647,22 @@ $("#pedido_hotdog").click(function(){
          else{
               if(value=='coca3')
               {
-                window.location.href="assets/registroproductoget.php?p=41&c="+document.getElementById('swal-input1').value;
+                window.location.href="assets/registroproductoget.php?p=41";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Ha seleccionado Coca Cola 3 Litros'})
               }
               if(value=='fanta3')
               {
-                window.location.href="assets/registroproductoget.php?p=42&c="+document.getElementById('swal-input1').value;
+                window.location.href="assets/registroproductoget.php?p=42";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Ha seleccionado Fanta 3 Litros' })
               }
               if(value=='sprite3')
               {
-                window.location.href="assets/registroproductoget.php?p=43&c="+document.getElementById('swal-input1').value;
+                window.location.href="assets/registroproductoget.php?p=43";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Ha seleccionado Sprite 3 Litros' })
               }
               if(value=='fresca3')
               {
-                window.location.href="assets/registroproductoget.php?p=44&c="+document.getElementById('swal-input1').value;
+                window.location.href="assets/registroproductoget.php?p=44";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Ha seleccionado Fresca 3 Litros' })
               }
               return ''
@@ -694,7 +693,7 @@ $("#pedido_hotdog").click(function(){
         cancelButtonText:'Cancelar Compra',
         confirmButtonText:'Añadir al pedido',
         footer:'Costos: <br>Refrescos 2 Litros: $30.00 MXN <br>El tiempo de su pedido sera estimado en la seccion de Orden',
-        html:'<label data-error="wrong" data-success="right" for="orangeForm-pass">Cantidad</label>'+'<input type="number" id="swal-input1" class="swal2-input" min="1" max="20" pattern="^[0-9]+">',allowOutsideClick:false,
+        allowOutsideClick:false,
         allowEscapeKey:false,
         allowEnterKey:false,
         stopKeydpwnPropagation:false,
@@ -705,22 +704,22 @@ $("#pedido_hotdog").click(function(){
          else{
               if(value=='coca2')
               {
-                window.location.href="assets/registroproductoget.php?p=45&c="+document.getElementById('swal-input1').value;
+                window.location.href="assets/registroproductoget.php?p=45";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Ha seleccionado Coca Cola 2 Litros'})
               }
               if(value=='fanta2')
               {
-                window.location.href="assets/registroproductoget.php?p=46&c="+document.getElementById('swal-input1').value;
+                window.location.href="assets/registroproductoget.php?p=46";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Ha seleccionado Fanta 2 Litros' })
               }
               if(value=='sprite2')
               {
-                window.location.href="assets/registroproductoget.php?p=47&c="+document.getElementById('swal-input1').value;
+                window.location.href="assets/registroproductoget.php?p=47";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Ha seleccionado Sprite 2 Litros' })
               }
               if(value=='fresca2')
               {
-                window.location.href="assets/registroproductoget.php?p=48&c="+document.getElementById('swal-input1').value;
+                window.location.href="assets/registroproductoget.php?p=48";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Ha seleccionado Fresca 2 Litros' })
               }
               return ''
@@ -752,7 +751,7 @@ $("#pedido_hotdog").click(function(){
         cancelButtonText:'Cancelar Compra',
         confirmButtonText:'Añadir al pedido',
         footer:'Costos: <br>Refrescos 600 mililitros: $15.00 MXN <br>El tiempo de su pedido sera estimado en la seccion de Orden',
-        html:'<label data-error="wrong" data-success="right" for="orangeForm-pass">Cantidad</label>'+'<input type="number" id="swal-input1" class="swal2-input" min="1" max="20" pattern="^[0-9]+">',allowOutsideClick:false,
+        allowOutsideClick:false,
         allowEscapeKey:false,
         allowEnterKey:false,
         stopKeydpwnPropagation:false,
@@ -763,22 +762,22 @@ $("#pedido_hotdog").click(function(){
          else{
               if(value=='coca600')
               {
-                window.location.href="assets/registroproductoget.php?p=49&c="+document.getElementById('swal-input1').value;
+                window.location.href="assets/registroproductoget.php?p=49";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Ha seleccionado Coca Cola 600 mililitros'})
               }
               if(value=='fanta600')
               {
-                window.location.href="assets/registroproductoget.php?p=50&c="+document.getElementById('swal-input1').value;
+                window.location.href="assets/registroproductoget.php?p=50";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Ha seleccionado Fanta 600 mililitros' })
               }
               if(value=='sprite600')
               {
-                window.location.href="assets/registroproductoget.php?p=51&c="+document.getElementById('swal-input1').value;
+                window.location.href="assets/registroproductoget.php?p=51";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Ha seleccionado Sprite 600 mililitros' })
               }
               if(value=='fresca600')
               {
-                window.location.href="assets/registroproductoget.php?p=52&c="+document.getElementById('swal-input1').value;
+                window.location.href="assets/registroproductoget.php?p=52";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Ha seleccionado Fresca 600 mililitros' })
               }
               return ''
@@ -807,7 +806,7 @@ $("#pedido_hotdog").click(function(){
         cancelButtonText:'Cancelar Compra',
         confirmButtonText:'Añadir al pedido',
         footer:'Costos: <br>Agua 600 ml: $8.00 MXN <br>Agua 1 litro: $15.00 MXN <br>El tiempo de su pedido sera estimado en la seccion de Orden',
-        html:'<label data-error="wrong" data-success="right" for="orangeForm-pass">Cantidad</label>'+'<input type="number" id="swal-input1" class="swal2-input" min="1" max="20" pattern="^[0-9]+">',allowOutsideClick:false,
+        allowOutsideClick:false,
         allowEscapeKey:false,
         allowEnterKey:false,
         stopKeydpwnPropagation:false,
@@ -818,12 +817,12 @@ $("#pedido_hotdog").click(function(){
          else{
               if(value=='aguachica')
               {
-                window.location.href="assets/registroproductoget.php?p=53&c="+document.getElementById('swal-input1').value;
+                window.location.href="assets/registroproductoget.php?p=53";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Ha seleccionado Agua 600 mililitros'})
               }
               if(value=='aguagrande')
               {
-                window.location.href="assets/registroproductoget.php?p=54&c="+document.getElementById('swal-input1').value;
+                window.location.href="assets/registroproductoget.php?p=54";
                 //return Swal.fire({ title:'Compra Hecha',text:'Su compra se ha agregado a su pedido',icon:'success',html: 'Ha seleccionado Agua 1 Litro' })
               }
               return ''
@@ -833,4 +832,3 @@ $("#pedido_hotdog").click(function(){
       })
   
   });
-  

@@ -34,6 +34,6 @@
 	</head>
     <body>
 		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-		<script src="../js/mensajeborrarorden.js"></script>
+		<script src="../js/mensajeborrarorden1.js"></script>
 	</body>
 </html>
