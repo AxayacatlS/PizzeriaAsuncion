@@ -63,7 +63,7 @@
 				<h1><a href="#"><img src="images/logopizzeria1.png">Pizzeria Asuncion<span></span></a></h1>
 				<nav role="navigation">
 					<ul>
-						<li><a href="" data-toggle="modal" data-target="#modalLoginForm" ><img src="images/logoinicio1.png">Iniciar</a></li>
+						<li><b><a href="" data-toggle="modal" data-target="#modalLoginForm" ><img src="images/logoinicio1.png">Iniciar</a></b></li>
 						<!--<li><a href="services.html"><img src="images/logopizza1.png">Pizzas</a></li>
 						<li><a href="pricing.html"><img src="images/logobebida1.png">Adicionales</a></li>
 						<li><a href="about.html">About</a></li>
@@ -252,61 +252,26 @@
 	</div>
 	-->
 	<!--TIRA DE IMAGENES NO ANIMADAS-->
-	<!--
+	
 	<div id="fh5co-blog" class="animate-box">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-					<h2>Latest <em>from</em> Blog</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+					<h2>Prueba nuestra funcionalidad de <em>Realidad Aumentada</em></h2>
+					<p>Pruebe apuntar la camara de sus dispositivo movil al logo de nuestra Pizzeria</p>
 				</div>
 			</div>
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4">
-					<a class="fh5co-entry" href="#">
-						<figure>
-						<img src="images/image_1.jpg" alt="Free Website Template, Free HTML5 Bootstrap Template" class="img-responsive">
-						</figure>
-						<div class="fh5co-copy">
-							<h3>We Create Awesome Free Templates</h3>
-							<span class="fh5co-date">June 8, 2016</span>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4">
-					<a class="fh5co-entry" href="#">
-						<figure>
-						<img src="images/image_2.jpg" alt="Free Website Template, Free HTML5 Bootstrap Template" class="img-responsive">
-						</figure>
-						<div class="fh5co-copy">
-							<h3>Handcrafted Using CSS3 &amp; HTML5</h3>
-							<span class="fh5co-date">June 8, 2016</span>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4">
-					<a class="fh5co-entry" href="#">
-						<figure>
-						<img src="images/image_3.jpg" alt="Free Website Template, Free HTML5 Bootstrap Template" class="img-responsive">
-						</figure>
-						<div class="fh5co-copy">
-							<h3>We Try To Update The Site Everyday</h3>
-							<span class="fh5co-date">June 8, 2016</span>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-						</div>
-					</a>
-				</div>
+			
 				<div class="col-md-12 text-center">
-					<p><a href="#" class="btn btn-primary btn-outline with-arrow">View More Posts <i class="icon-arrow-right"></i></a></p>
+					<p><a href="#" class="btn btn-primary btn-outline with-arrow">Sorpresa AR <i class="icon-arrow-right"></i></a></p>
 				</div>
 			</div>
 		</div>	
 	</div>
-	-->
+	
 <!--BOTON DE AYUDA-->
 <!--
 	<div class="fh5co-cta" style="background-image: url(images/image_3.jpg);">
@@ -326,9 +291,9 @@
 			<div class="col-md-3 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
 				<h3>Desarrollado</h3>
 				<p>Equipo de desarrollo Dinamyte</p>
-				<!--
+	  			<!--
 				<p><a href="#" class="btn btn-primary btn-outline with-arrow btn-sm">Ingresar <i class="icon-arrow-right"></i></a></p>
--->
+	  			-->
 			</div>
 			<!--
 			<div class="col-md-6 col-md-push-1 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
