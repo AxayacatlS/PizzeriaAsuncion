@@ -45,7 +45,7 @@
       <a-entity
         gltf-model="models/pizza.glb"
         scale="10 10 10"
-        position="0 0 -50"
+        position="0 0 0"
         >
       </a-entity>
     </a-nft>
