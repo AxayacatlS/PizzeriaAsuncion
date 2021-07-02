@@ -259,6 +259,7 @@
 				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
 					<h2>Prueba nuestra funcionalidad de <em>Realidad Aumentada</em></h2>
 					<p>Pruebe apuntar la camara de sus dispositivo movil al logo de nuestra Pizzeria</p>
+					<span class="icon"><img src="pizzerialogo1.png" alt="Free HTML5 Templates" class="img-responsive"></span>
 				</div>
 			</div>
 		</div>
@@ -269,7 +270,8 @@
 					<p><a href="ar.php" class="btn btn-primary btn-outline with-arrow">Sorpresa AR <i class="icon-arrow-right"></i></a></p>
 				</div>
 			</div>
-		</div>	
+		</div>
+			
 	</div>
 	
 <!--BOTON DE AYUDA-->
