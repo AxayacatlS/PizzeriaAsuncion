@@ -44,7 +44,7 @@
     >
       <a-entity
         gltf-model="models/pizza.glb"
-        scale="100 100 100"
+        scale="10 10 10"
         position="-20 0 -50"
         >
       </a-entity>
