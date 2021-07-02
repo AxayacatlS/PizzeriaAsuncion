@@ -266,7 +266,7 @@
 			<div class="row">
 			
 				<div class="col-md-12 text-center">
-					<p><a href="#" class="btn btn-primary btn-outline with-arrow">Sorpresa AR <i class="icon-arrow-right"></i></a></p>
+					<p><a href="ar.php" class="btn btn-primary btn-outline with-arrow">Sorpresa AR <i class="icon-arrow-right"></i></a></p>
 				</div>
 			</div>
 		</div>	
