@@ -51,6 +51,10 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+	<script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <!--<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>-->
+    <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+	<!--<script src="https://jesstelford.github.io/aframe-click-drag-component/build.js"></script>-->
 
 	</head>
 	<body>
@@ -268,6 +272,106 @@
 			
 				<div class="col-md-12 text-center">
 					<p><a href="ar.php" class="btn btn-primary btn-outline with-arrow">Sorpresa AR <i class="icon-arrow-right"></i></a></p>
+				</div>
+			</div>
+		</div>
+			
+	</div>
+
+	<!-- ************************************************************************** -->
+	<div id="fh5co-blog" class="animate-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+					<h2>Interactue con objetos 3D</em></h2>
+					<p>Use las teclas A, S, D, W para moverme en el plano 3D</p>
+					<p>Use el mouse para mover el plano</p>
+				<style>
+					#myEmbeddedScene {
+					  width:850px;
+					  height:500px;
+					}
+					a-scene {
+						height: 500px;
+						width: 850px;
+					}
+				</style> 
+                <!-- Slide image -->
+               <!--<img src="images/slider1.jpg" class="img-responsive" alt=""/>-->
+			   <center>
+			   <a-scene embedded>
+			   <a-assets>
+						   <img id="floor" src="view/ladrillo.jpg">
+						   <img id="cielouno" src="view/cielocorto.jpg">
+						   <img id="cielodos" src="view/cielolargo.png">
+						   <img id="cielonuevo" src="view/cielonuevo.jpg">
+						  <a-asset-item id="mesa" src="models/mesita.glb"></a-asset-item>
+						  <a-asset-item id="animado" src="models/hamburanimado.glb"></a-asset-item>
+						  <a-asset-item id="combo" src="models/combo.glb"></a-asset-item>
+						  <a-asset-item id="papas" src="models/papitas.glb"></a-asset-item>
+						  <a-asset-item id="pizza1" src="models/pepperoni.glb"></a-asset-item>
+						  <a-asset-item id="pizza2" src="models/champinion.glb"></a-asset-item>
+						  <a-asset-item id="pizza3" src="models/pizza.glb"></a-asset-item>
+						   <!--<a-asset-item id="pastito" src="pasto.glb"></a-asset-item>-->
+
+				</a-assets>
+				<!--<a-entity gltf-model="mc3.glb" scale="2 2 2" position="-1 0.5 -3" rotation="0 90 90"></a-entity>-->
+
+				
+					<a-animation attribute="rotation" begin="click" repeat="indefinite" to="0 360 0"></a-animation>
+					<!--<a-event name="mouseenter" scale="4 6 1"></a-event>-->
+				
+					<!--
+				<a-entity gltf-model="#arbolito" position="0 1.25 10"></a-entity>
+				<a-entity gltf-model="#arbolito" position="3 1.25 -9"></a-entity>
+				-->
+				<a-entity gltf-model="#mesa" scale="1 1 1" position="3 -0.25 -9"></a-entity>
+				<a-entity gltf-model="#mesa" scale="1 1 1" position="-3 -0.25 9"></a-entity>
+
+				<a-entity gltf-model="#mesa" scale="1 1 1" position="-8 -0.25 -2"></a-entity>
+				<a-entity gltf-model="#mesa" scale="1 1 1" position="8 -0.25 2"></a-entity>
+
+				<a-entity gltf-model="#animado" scale="5 5 5" position="3 1.0 -9"></a-entity>
+				<a-entity gltf-model="#papas" scale="5 5 5" position="3 1.0 -10"></a-entity>
+				<a-entity gltf-model="#combo" scale="5 5 5" position="-3 1.0 9"></a-entity>
+
+				<a-entity gltf-model="#pizza1" scale="30 30 30" position="-8 1.0 -2"></a-entity>
+				<a-entity gltf-model="#pizza1" scale="30 30 30" position="-7.5 1.0 -2"></a-entity>
+				<a-entity gltf-model="#pizza1" scale="30 30 30" position="-7 1.0 -2.3"></a-entity>
+
+				<a-entity gltf-model="#pizza3" scale="1 1 1" position="20 1.0 20" rotation="-20 0 10"></a-entity>
+				
+				
+					
+				<a-camera position="0 1.25 -1">
+					<a-cursor color="#FF0000"/>
+				</a-camera>
+
+				<a-sky src="#cielonuevo"s
+					   rotation="0 180 0">
+				</a-sky>
+				<a-plane material="color: #FFFFFF;
+								   src: #floor;
+								   repeat: 100 100;
+								   normal-map: #floor;
+								   normal-textura-repeat: 1000 1000"
+						 rotation="-90 0 0"
+						 scale="120 120 1">
+				</a-plane>
+			   </a-scene>
+			   <script>
+				   var entity=document.querySelector( 'a-entity');
+				   entity.addEventListener("mouseenter", funtion()
+				   {
+						entity.setAttribute("scale",
+						{
+							x:0.5,
+							y:2,
+							z: 5.9
+						});
+				   });
+			   </script>
+			   
 				</div>
 			</div>
 		</div>
