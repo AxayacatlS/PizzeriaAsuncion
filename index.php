@@ -279,32 +279,41 @@
 	</div>
 
 	<!-- ************************************************************************** -->
-	<div id="fh5co-blog" class="animate-box">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+	<div id="fh5co-blog" class="animate-box"><!--1-->
+		<div class="container"><!--2-->
+			<div class="row"><!--3-->
+				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading"><!--4-->
 					<h2>Interactue con objetos 3D</em></h2>
 					<p>Use las teclas A, S, D, W para moverme en el plano 3D</p>
 					<p>Use el mouse para mover el plano</p>
-				<style>
+				</div><!--4-->
+			</div><!--3-->
+		</div><!--2-->
+			
+	</div><!--1-->
+	<div class="col-md-6 col-md-offset-3 text-center fh5co-heading"><!--1-->
+	<style>
 					#myEmbeddedScene {
 					  width:850px;
 					  height:500px;
+					  
 					}
 					a-scene {
 						height: 500px;
 						width: 850px;
+						
 					}
 				</style> 
                 <!-- Slide image -->
                <!--<img src="images/slider1.jpg" class="img-responsive" alt=""/>-->
-			   <center>
+			   <!--<center>-->
 			   <a-scene embedded>
 			   <a-assets>
 						   <img id="floor" src="view/ladrillo.jpg">
 						   <img id="cielouno" src="view/cielocorto.jpg">
 						   <img id="cielodos" src="view/cielolargo.png">
 						   <img id="cielonuevo" src="view/cielonuevo.jpg">
+						   <img id="fondopizza" src="view/fotopizzeria.png">
 						  <a-asset-item id="mesa" src="models/mesita.glb"></a-asset-item>
 						  <a-asset-item id="animado" src="models/hamburanimado.glb"></a-asset-item>
 						  <a-asset-item id="combo" src="models/combo.glb"></a-asset-item>
@@ -312,7 +321,18 @@
 						  <a-asset-item id="pizza1" src="models/pepperoni.glb"></a-asset-item>
 						  <a-asset-item id="pizza2" src="models/champinion.glb"></a-asset-item>
 						  <a-asset-item id="pizza3" src="models/pizza.glb"></a-asset-item>
+
+						  <a-asset-item id="edi1" src="models/ed1.glb"></a-asset-item>
+						  <a-asset-item id="edi2" src="models/ed2.glb"></a-asset-item>
+						  <a-asset-item id="edi3" src="models/ed3.glb"></a-asset-item>
+						  <a-asset-item id="h2" src="models/hambur2.glb"></a-asset-item>
+						  <a-asset-item id="taco" src="models/taco.glb"></a-asset-item>
+						  <a-asset-item id="tree" src="models/arbolest.glb"></a-asset-item>
+
+
 						   <!--<a-asset-item id="pastito" src="pasto.glb"></a-asset-item>-->
+
+						
 
 				</a-assets>
 				<!--<a-entity gltf-model="mc3.glb" scale="2 2 2" position="-1 0.5 -3" rotation="0 90 90"></a-entity>-->
@@ -325,6 +345,20 @@
 				<a-entity gltf-model="#arbolito" position="0 1.25 10"></a-entity>
 				<a-entity gltf-model="#arbolito" position="3 1.25 -9"></a-entity>
 				-->
+				<a-plane material="src: #fondopizza;" rotation="0 0 0" scale="170 110 1" position="0 30 -60"></a-plane>
+
+				<a-entity gltf-model="#edi1" rotation="0 180 0" scale="7 7 7" position="0 -1 60"></a-entity>
+				<a-entity gltf-model="#edi2" rotation="0 -90 0" scale="250 250 250" position="40 0 0"></a-entity>
+				<a-entity gltf-model="#edi3" rotation="0 -90 0" scale="3 3 3" position="-60 -1.5 0"></a-entity>
+
+				<a-entity gltf-model="#h2" rotation="0 0 0" scale="130 130 130" position="20 -1.5 -25"></a-entity>
+				<a-entity gltf-model="#combo" rotation="0 0 0" scale="100 100 100" position="-20 -1.5 25"></a-entity>
+				<a-entity gltf-model="#animado" rotation="0 0 0" scale="100 100 100" position="-28 0 -25"></a-entity>
+				<a-entity gltf-model="#pizza1"  rotation="0 180 -30" scale="380 380 380" position="50 2 -25"></a-entity>
+
+				<a-entity gltf-model="#tree" rotation="0 0 0" scale="100 100 100" position="35 -1.5 25"></a-entity>
+				<a-entity gltf-model="#tree" rotation="0 0 0" scale="100 100 100" position="35 -1.5 45"></a-entity>
+
 				<a-entity gltf-model="#mesa" scale="1 1 1" position="3 -0.25 -9"></a-entity>
 				<a-entity gltf-model="#mesa" scale="1 1 1" position="-3 -0.25 9"></a-entity>
 
@@ -371,13 +405,7 @@
 						});
 				   });
 			   </script>
-			   
-				</div>
-			</div>
-		</div>
-			
-	</div>
-	
+	</div><!--1-->
 <!--BOTON DE AYUDA-->
 <!--
 	<div class="fh5co-cta" style="background-image: url(images/image_3.jpg);">
